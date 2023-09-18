@@ -4,10 +4,16 @@ import './index.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';
 
+const DATA = [
+  {id: "todo-0", name: "Comer", completed: true},
+  {id: "todo-1", name: "Dormir", completed: false},
+  {id: "todo-2", name: "Acordar", completed: false},
+];
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App subject = "Fabiano" />
+    <App tasks={DATA} />
   </React.StrictMode>
 );
 
